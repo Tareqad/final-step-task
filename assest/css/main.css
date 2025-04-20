@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --mainColor: #1E1E1E;
+    --secColor: #ffffff;
+    --secfontcolor: #999999;
+    --secondaryBtn: #703BF7;
+    --mainFont: "Urbanist", sans-serif;
+}
+
+body {
+    font-family: var(--mainFont);
+    background-color: #141414;
+    color: var(--secColor);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--mainFont);
+    color: var(--secColor);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+ul { list-style-type: none; }
+a { text-decoration: none; }
+
+.custom-container {
+    width: calc(100% - 160px);
+    margin: auto;
+    overflow: visible;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner {
+   background: url('../img/public/banner.png')no-repeat ;
+    
+    background-color: #1A1A1A;
+}
+.banner a{
+    color: var(--secColor);
+}
+.close-btn {
+    background-color: #262626;
+    
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.close-btn i{
+    color: var(--secColor);
+}
+
+
+/* Buttons */
+.btn-contact, .learn-btn, .Brows-btn, .view-btn, .View-Property-Details-btn, 
+.testimonials-btn, .frequently-asked-btn, .faq-btn ,.explore-properties-btn {
+    padding: 20px 20px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.Brows-btn, .View-Property-Details-btn ,.explore-properties-btn {
+    background-color: var(--secondaryBtn);
+    color: var(--secColor);
+}
+
+.Brows-btn:hover, .View-Property-Details-btn:hover ,.explore-properties-btn:hover {
+    background-color: var(--secColor);
+    color: var(--mainColor);
+}
+
+.btn-contact, .learn-btn, .view-btn, .testimonials-btn, .frequently-asked-btn, .faq-btn {
+    background-color: #141414;
+    color: var(--secColor);
+}
+
+.navbar a {
+    color: var(--secColor);
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #141414;
+    color: var(--secColor);
+    border: 1px solid #262626;
+    border-radius: 10px;
+}
+
+.navbar-toggler {
+    background-color: #141414;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* Header */
+.header {
+    background-color: #141414;
+    border: 1px solid #262626;
+    padding: 10px 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #141414;
+    position: relative;
+}
+
+.hero-popup {
+    position: absolute;
+    right: 45%;
+}
+
+.hero-items {
+    max-width: 814px;
+    line-height: 1.5;
+}
+
+.hero-items h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* Counter Item */
+.counter-item {
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    color: var(--secColor);
+    text-align: left;
+    margin: 10px 0;
+    width: 239px;
+    height: 121px;
+}
+
+.counter-item h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.counter-item p {
+    font-size: 18px;
+    color: var(--secfontcolor);
+    margin-bottom: 0;
+}
+
+/* Discover Your Dream */
+.discover-yourdream {
+    background-color: #141414;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.discover-yourdream-card {
+    position: relative;
+    width: calc(25% - 30px);
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.discover-yourdream-card p {
+    font-size: 20px;
+}
+
+.discover-yourdream-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.discover-yourdream-card .arrow-up-right {
+    position: absolute;
+    right: 3%;
+    top: 7%;
+}
+
+/* Featured Properties */
+.featured-Properties {
+    background-color: #141414;
+    padding: 10px 0;
+}
+
+.featured-Properties-title {
+    font-size: 48px;
+}
+
+.featured-Properties-subtitle {
+    font-size: 18px;
+    color: var(--secfontcolor);
+}
+
+.featured-Properties-card {
+    width: calc(33.33% - 65px);
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.featured-Properties-card h3 {
+    font-size: 24px;
+}
+
+.featured-Properties-card p {
+    font-size: 18px;
+    color: var(--secfontcolor);
+}
+
+.featured-Properties-card-price span {
+    font-size: 24px;
+}
+
+.featured-Properties-card-icon {
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+}
+
+.featured-Properties-card-icon span {
+    font-size: 18px;
+}
+
+.pagination {
+    border-top: 1px solid #262626;
+}
+
+.pagination-list-icon i {
+    padding: 15px;
+    border: #262626 solid 1px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.featured-Properties-cards {
+    transition: opacity 0.3s ease;
+}
+
+.page-link {
+    background: transparent;
+    border: none;
+    color: var(--secfontcolor);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.page-link.active {
+    background: #262626;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* Testimonials */
+.testimonials-description h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.testimonials-description p {
+    font-size: 18px;
+    color: var(--secfontcolor);
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    width: calc(33.33% - 44px);
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+}
+
+.star {
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    color: #FFE500;
+}
+
+.reviewer-info h3 {
+    font-size: 24px;
+}
+
+.reviewer-info address {
+    font-size: 18px;
+    color: var(--secfontcolor);
+}
+
+/* FAQ Section */
+.frequently-asked h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.frequently-asked p {
+    font-size: 18px;
+    color: var(--secfontcolor);
+    margin-bottom: 20px;
+}
+
+.frequently-asked-card {
+    width: calc(33.33% - 44px);
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+}
+
+.frequently-asked-card-details h3 {
+    font-size: 24px;
+}
+
+.frequently-asked-card-details p {
+    font-size: 18px;
+    color: var(--secfontcolor);
+}
+
+
+/* explore-properties */
+.explore-properties{
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+}
+.explore-properties h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.explore-properties p {
+    font-size: 18px;
+    color: var(--secfontcolor);
+    margin-bottom: 20px;
+}
+/*footer*/
+.footer-item h3{
+    font-size: 20px;
+    color: var(--secfontcolor);
+
+}
+.footer-item a{
+    font-size: 18px;
+    color: var(--secColor);
+}
+.email-container {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background: #121212; 
+}
+
+.email-container input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.email-container i{
+    color: var(--secfontcolor);
+    font-size: 24px;
+}
+
+
+.email-container .send-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+   
+    transition: transform 0.3s ease;
+}
+
+.email-container .send-button:hover {
+    transform: scale(1.1);
+}
+
+.copyright{
+    background-color: #1A1A1A;
+}
+.copyright-text p{
+    font-size: 18px;
+    color: var(--secColor);
+    
+}
+.copyright-text a{
+    color: var(--secColor);
+    font-size: 18px;
+    text-decoration: none;
+}
+.social-icons a i{
+    background-color: #141414;
+    color: var(--secColor);
+    padding: 15px;
+    font-size:20px ;
+    border-radius: 50%;
+
+}
+
+/* -------------------- */
+/* MEDIA QUERIES /
+/* -------------------- */
+
+@media (max-width: 992px) {
+    h1 { font-size: 42px; }
+    h2 { font-size: 36px; }
+    h3 { font-size: 28px; }
+    p  { font-size: 16px; }
+
+    .custom-container {
+        width: 90%;
+    }
+
+    .discover-yourdream-card, .featured-Properties-card, .testimonial-card, .frequently-asked-card {
+        width: calc(50% - 20px);
+    }
+
+    .btn-contact, .learn-btn, .Brows-btn, .view-btn, 
+    .View-Property-Details-btn, .testimonials-btn, 
+    .frequently-asked-btn, .faq-btn {
+        font-size: 16px;
+        padding: 14px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 30px; }
+    h3 { font-size: 24px; }
+    p  { font-size: 14px; }
+
+    .hero-popup {
+        position: absolute;
+        left: -30%;
+        top: 40%;
+        margin: 0 auto 20px;
+    }
+
+    .hero-items h1,
+    .hero-items p,
+    .hero-body {
+        text-align: center;
+    }
+
+    .counter-item {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .counter-item h3 { font-size: 32px; }
+    .counter-item p  { font-size: 16px; }
+
+    .discover-yourdream-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 20px; }
+    p  { font-size: 14px; }
+
+    .custom-container {
+        width: 95%;
+    }
+
+    .discover-yourdream-card,
+    .featured-Properties-card,
+    .testimonial-card,
+    .frequently-asked-card {
+        width: 100%;
+    }
+
+    .discover-yourdream-card .arrow-up-right {
+        right: 5%;
+        top: 10%;
+    }
+
+    .btn-contact, .learn-btn, .Brows-btn, .view-btn, 
+    .View-Property-Details-btn, .testimonials-btn, 
+    .frequently-asked-btn, .faq-btn {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+}
